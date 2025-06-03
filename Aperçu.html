@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>R.O</title>
+	<!-- Liens vers Bootstrap CSS -->
+	<!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">-->
+	<!-- CSS personnalisé -->
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="./styles.css">
+	<!-- jQuery -->
+	<script src="./go-debug-3.0.0.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+	<!--<script src="https://unpkg.com/gojs@3.0.0/release/go.js"></script>-->
+
+</head>
+
+<body>
+	<!-- Contenu de l'interface utilisateur -->
+	<div class="container">
+		<div class="row" id="acceuil">
+			<div class="col-md-6" id="description">
+				<h1>Résolution du problème de Transport</h1><br>
+			</div>
+			<div class="col-md-6" id="formulaire">
+				<label for="inputRows" id="fligne">Nombre de magasins de dépôt :</label>
+				<input type="text" id="inputRows" pattern="\[0-9\]*"
+					title="Veuillez entrer uniquement des chiffres"><br>
+				<label for="inputCols" id="fcol">Nombre de magasins de destination :</label>
+				<input type="text" id="inputCols" class="colonne" pattern="\[0-9\]*"
+					title="Veuillez entrer uniquement des chiffres"><br><br><br>
+				<button id="submitButton" class="btn">Crée le tableau</button>
+				<!--<button id="resoudre1" class="btn">Résoudre</button>-->
+				<!--	<button id="submitButton" class="btn">Minili </button>
+				<button id="submitButton1" class="btn">Balas </button><br>-->
+			</div>
+		</div>
+
+	</div>
+	<div class="row_mt-4">
+		<div class="col-md-6">
+			<div id="result"></div>
+			<button id="resoudre" class="btn">Minili </button>
+			<button id="resoudre1" class="btn">Balas Hamer</button><br>
+			<br>
+			<div id="optimal"></div>
+		</div>
+	</div>
+	<div class="container-fluid" id="stepBystep"></div><br>
+</body>
+<script src="./jquery-3.6.0.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./index_balas copie.js"></script>
+
+
+</html>

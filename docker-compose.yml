@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - presentation_volume:/usr/share/nginx/html
+
+volumes:
+  presentation_volume:
